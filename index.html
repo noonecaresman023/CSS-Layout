@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Demonstration!</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1> JDM CARS </h1>
+    <div class="brand-names">
+        <p>Toyota</p>
+        <p>Mazda</p>
+        <p>Honda</p>
+    </div>
+    <main>
+        <!-- EVERYTHING IS IN A DIV BECAUSE THAT IS THE ONLY ELEMENT THAT IS APPROPRIATE TO USE SECTION AND ARTICLE REQUIRES AN H2-H6 BUT I DON'T HAVE A USE FOR IT-->
+        <!-- Toyota Section -->
+        <!-- the img-container's purpose is so that we can easily put the attribution link on top of the image -->
+        <div class="toyota-container">
+            <div class="img-container">
+                <img alt="White Supra"
+                    src="https://images.unsplash.com/photo-1603811478698-0b1d6256f79a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                <a target="_blank" href="https://unsplash.com/@visualsbyroyalz" class="img-attrib">Anastase Maragos on Unsplash</a>
+            </div>
+            <div class="img-container">
+                <img alt="Backside of a Black Supra"
+                    src="https://images.unsplash.com/photo-1637911641983-c9a729181d37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                <a target="_blank" href="https://unsplash.com/@itschrisyo" class="img-attrib">Chris Hristov on Unsplash</a>
+            </div>
+            <div class="img-container">
+                <img alt="Silver Supra"
+                    src="https://images.unsplash.com/photo-1591051163166-49a355e25170?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                <a target="_blank" href="https://unsplash.com/@beedham" class="img-attrib">James Beedham on Unsplash</a>
+            </div>
+            <div class="img-container">
+                <img alt="Blue Supra"
+                    src="https://images.unsplash.com/photo-1631526090968-6979b72f2ce2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                <a target="_blank" href="https://unsplash.com/@svl_photo" class="img-attrib">Kirill Shavlo on Unsplash</a>
+            </div>
+
+            <div class="text-container">
+                <img class="car-symbol" alt="Mazda Logo"
+                    src="https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo-768x432.png">
+                <p>The Toyota Supra is a highly desirable sports car that offers impressive performance, responsive
+                    handling, and sleek design. Its powerful engine delivers exhilarating acceleration, while its finely
+                    tuned suspension provides a balanced and agile ride. The Supra's reliability and durability are also
+                    well-known, making it a practical choice for drivers who want a high-performance sports car that can
+                    also serve as a daily driver. With its impressive performance capabilities and stylish aesthetics,
+                    the Toyota Supra is a standout choice for those seeking a thrilling driving experience.
+                </p>
+                <a target="_blank" href="https://1000logos.net/">Logo is from 1000Logos</a>
+            </div>
+        </div>
+        
+        <!--Mazda Section -->
+        <div class="mazda-container">
+            <div class="img-container">
+                <img alt="Red NA Miata"
+                    src="https://images.unsplash.com/photo-1610884447640-42b8ec61a933?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80">
+                <a target="_blank" href="https://unsplash.com/@elwindewitte" class="img-attrib">Elwin de Witte on Unsplash</a>
+            </div>
+            <div class="img-container">
+                <img alt="White NC Miata"
+                    src="https://images.unsplash.com/photo-1586464836139-86553c751f65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80">
+                <a target="_blank" href="https://unsplash.com/@teddycharti" class="img-attrib">Teddy Charti on Unsplash</a>
+            </div>
+            <div class="img-container">
+                <img alt="Black ND Miata"
+                    src="https://images.unsplash.com/photo-1661963482363-513116a75322?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                <a target="_blank" href="https://unsplash.com/@omerhaktan" class="img-attrib">Ömer Haktan Bulut on Unsplash</a>
+            </div>
+            <div class="img-container">
+                <img alt="Green NB Miata"
+                    src="https://images.unsplash.com/photo-1561043855-7bfc2149641a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                <a target="_blank" href="https://unsplash.com/@jerrykavan" class="img-attrib">Jaromír Kavan on Unsplash</a>
+            </div>
+            <div class="text-container">
+                <img class="car-symbol" alt="Mazda Logo"
+                    src="https://1000logos.net/wp-content/uploads/2019/12/Mazda_Logo-768x432.png">
+                <p> The Mazda Miata is a legendary sports car that offers exceptional handling, nimble performance, and
+                    a sleek design. Its lightweight construction and finely tuned suspension provide an unparalleled
+                    driving experience, while its driver-focused interior offers a comfortable and engaging driving
+                    experience. The Miata's playful personality and excellent handling make it a standout choice for
+                    drivers who want a fun and engaging sports car. With its classic roadster proportions and
+                    eye-catching details, the Mazda Miata is a true head-turner that delivers plenty of smiles per mile.
+                </p>
+                <a target="_blank" href="https://1000logos.net/">Logo is from 1000Logos</a>
+            </div>
+        </div>
+        <!--Honda Section -->
+        <!-- The honda content is inside another container so that I can put the display flex inside the honda-content-container so that I can center it onto the grid item -->
+        <div class="honda-content-container">
+            <div class="honda-content">
+                <div class="img-container">
+                    <img alt="Yellow S2k"
+                        src="https://images.unsplash.com/photo-1616646187794-d3007d1923a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                    <a target="_blank" href="https://unsplash.com/@higashino_se" class="img-attrib">Haidong Liang on Unsplash</a>
+                </div>
+                <div class="img-container">
+                    <img alt="Red S2k"
+                        src="https://images.unsplash.com/photo-1629013013097-c75f30450dbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                    <a target="_blank" href="https://unsplash.com/@qufara" class="img-attrib">Nika Qufarashvili on Unsplash</a>
+                </div>
+                <div class="img-container">
+                    <img alt="Silver S2k"
+                        src="https://images.unsplash.com/photo-1600706432502-77a0e2e32790?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1243&q=80">
+                    <a target="_blank" href="https://unsplash.com/@mattkoffel_" class="img-attrib"> Matt Koffel on Unsplash</a>
+                </div>
+
+                <div class="img-container">
+                    <img alt="Black S2k"
+                        src="https://images.unsplash.com/photo-1616634375264-2d2e17736a36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80">
+                    <a target="_blank" href="https://unsplash.com/@jmp_travel" class="img-attrib">Joel Protasio on Unsplash</a>
+                </div>
+
+                <div class="text-container">
+                    <img class="car-symbol" alt="Honda Logo"
+                        src="https://1000logos.net/wp-content/uploads/2018/03/Honda-logo-768x432.png">
+                    <p> The Honda S2000 is a high-performance sports car that offers a thrilling driving experience. Its
+                        high-revving engine delivers impressive power, while its responsive handling and well-tuned
+                        suspension make it a joy to drive. The S2000's sleek and attractive design is a standout on the
+                        road, and its driver-focused interior offers a comfortable and engaging driving experience. With
+                        its reputation for reliability and durability, the Honda S2000 is a practical choice for drivers
+                        who want a high-performance sports car that delivers both style and substance. Overall, the
+                        S2000 is a great choice for those seeking an exhilarating ride and a bold, head-turning design.
+                    </p>
+                    <a target="_blank" href="https://1000logos.net/">Logo is from 1000Logos</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- My attribution -->
+    <footer>
+        <p>
+            This project is made by <a title="Click to visit my Github Profile!"
+                href="https://github.com/noonecaresman023" target="_blank">Jerome Michael Dela Cruz.</a>
+            <span>You can contact me by clicking this </span><a title="Click to email me!"
+                href="mailto:stevebrine223@gmail.com?subject=!!IMPORTANT!!">link.</a>
+        </p>
+    </footer>
+</body>
+
+</html>

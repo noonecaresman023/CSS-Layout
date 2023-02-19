@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Open+Sans:wght@400;500;700&display=swap');
+
+/* 
+
+font-family: 'Kolker Brush', cursive;
+font-family: 'Open Sans', sans-serif; 
+
+*/
+
+/* BASIC CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Centers the content in the body tag and sets the minimum viewport height to 100*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Kolker Brush', cursive;
+    text-align: center;
+    font-size: 4.5rem;
+    color: red;
+    letter-spacing: 1.5rem;
+    text-shadow: 4px 2px 8px black;
+    margin: .5em;
+}
+
+/*Sets all img elements to that dimensions*/
+img {
+    width: 300px;
+    height: 200px;
+}
+
+/* The img-container and the img-attrib is for the attribution for the images; the styles that are inside is makes it so that the text is on top of the image. */
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-attrib {
+    font-size: .7rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 .5em .5em 0; /*right .5em bottom .5em*/
+    padding: .25em;
+    color: white;
+    background-color: rgba(0, 0, 0, .2) /* black with the opacity of .2*/
+}
+
+.brand-names {
+    display: flex; /*The display flex is so that it is all laid out horizontally not vertically*/
+}
+
+.brand-names>p {
+    font-family: 'Kolker Brush', cursive;
+    color: red;
+    font-size: 3.5rem;
+    margin: 1em;
+    border: solid 5px hsla(0, 95%, 35%, 1);
+    border-width: 3px 3px 5px 5px;
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+    /* The whole border style  creates a handwritten type of look */
+    padding: 0 1.5em 0 1.5em;
+    text-transform: uppercase;
+}
+
+
+/*The main content is inside the grid and the content is styled into a grid as well*/
+main {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    gap: 1em;
+    grid-template-areas:
+        "content-1 content-2"
+        "content-3 content-3";
+    margin: 5em;
+}
+
+/*******TOYOTA SECTION STYLES********/
+.toyota-container {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+    gap: 1em;
+    grid-template-areas:
+        "img-1 img-2"
+        "img-3 img-4"
+        "text text";
+    border: 2px solid black;
+    width: 650px;
+    padding: 1em;
+    grid-area: content-1;
+}
+
+/*******MAZDA SECTION STYLES********/
+.mazda-container {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr auto;
+    gap: 1em;
+    grid-template-areas:
+        "img-1 img-2"
+        "img-3 img-4"
+        "text text";
+    border: 2px solid black;
+    width: 650px;
+    padding: 1em;
+    grid-area: content-2;
+}
+
+
+/*******HONDA SECTION STYLES********/
+.honda-content-container {
+    display: flex;
+    justify-content: center;
+    grid-area: content-3;
+}
+
+.honda-content {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr auto;
+    gap: 1em;
+    grid-template-areas:
+        "img-1 img-2"
+        "img-3 img-4"
+        "text text";
+    border: 2px solid black;
+    width: 650px;
+    padding: 1em;
+}
+
+/*This will overwrite the img styling above as this is for the car brand logo */
+.car-symbol {
+    float: left;
+    width: 300px;
+    height: 150px;
+}
+
+/*The text container is within the honda-content, mazda-container and toyota-container and they are just the text content of the grid */
+.text-container {
+    grid-area: text;
+}
+
+
+/* Styles for my footer to stay below the page and be centered */
+footer {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
